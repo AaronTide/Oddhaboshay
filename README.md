@@ -14,7 +14,7 @@
 
 **Step 3: Run the Project**
 1. Copy `oddhaboshay/` folder to `htdocs/` (XAMPP) or `www/` (WAMP)
-2. Open: http://localhost/oddhaboshay
+2. Open: http://localhost/oddhaboshay/landpage.php
 
 ---
 
@@ -34,7 +34,7 @@
 ### Project Structure
 ```
 oddhaboshay/
-├── index.php              # Homepage - role selection
+├── landingpage.php              # Homepage - role selection
 ├── config/db.php          # Database connection config
 ├── database/              # SQL schema file
 ├── assets/css/style.css   # Main stylesheet
@@ -47,14 +47,7 @@ oddhaboshay/
 
 ---
 
-### ER Diagram Explanation (for viva)
-- **admins** - standalone table, no FK
-- **students** - standalone table
-- **teachers** - standalone table
-- **courses** - has FK to teachers (teacher_id)
-- **enrollments** - has FK to students AND courses (M:N relationship)
-- **course_materials** - has FK to courses AND teachers
-- **messages** - polymorphic: stores sender/receiver type+id
+
 
 ### Technology Stack
 - **Frontend**: HTML5, CSS3, Vanilla JavaScript
